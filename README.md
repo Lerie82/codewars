@@ -8,4 +8,4 @@ This is your spoiler alert. The code contained in this repo will give away solut
 I have decided to organize the katas by the username of the person who created/owns the kata.
 
 ## help
-You can contact me if you need help, however, you may not get it.
+You can contact me if you need help, however, you may not get it, admin@lerie.us.
