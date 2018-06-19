@@ -17,13 +17,14 @@ function isAlt($str)
 	{
 		if(in_array($str[$i], $vowels))
 		{
-			if(strlen($str[$i+1])<=0) return false;
-
 			//yes-> is next char const
-			if(!in_array($str[$i+1], $vowels))
+			if($i+1 < sizeof($str))
 			{
-				//yes-> count++ (count=1)
-				$count++;
+				if(!in_array($str[$i+1], $vowels))
+				{
+					//yes-> count++ (count=1)
+					$count++;
+				}
 			}
 		}
 
@@ -33,10 +34,10 @@ function isAlt($str)
 	return false;
 }
 
-echo isAlt("amazon")."<br/>";
-echo isAlt("apple")."<br/>";
-echo isAlt("banana")."<br/>";
-echo isAlt("orange")."<br/>";
-echo isAlt("helipad")."<br/>";
-echo isAlt("yay")."<br/>";
+echo isAlt("amazon")."\r\n";
+echo isAlt("apple")."\r\n";
+echo isAlt("banana")."\r\n";
+echo isAlt("orange")."\r\n";
+echo isAlt("helipad")."\r\n";
+echo isAlt("yay")."\r\n";
 ?>
