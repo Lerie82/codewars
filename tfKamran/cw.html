@@ -1,0 +1,26 @@
+<body>
+
+<script>
+//https://www.codewars.com/kata/counting-sheep-dot-dot-dot/train/javascript
+function countSheeps(sheep)
+{
+        var count = 0;
+        sheep.forEach(function(item, index, array)  
+        {
+                if(item !== null && item !== false && item !== undefined) count++;
+        });
+
+        return count;
+}
+
+var arrSheep = [true,  true,  true,  false,
+              true,  true,  true,  true ,
+              true,  false, true,  false,
+              true,  false, false, true ,
+              true,  true,  true,  true ,
+              false, false, true,  true ];
+
+countSheeps(arrSheep);
+</script>
+
+</body>
