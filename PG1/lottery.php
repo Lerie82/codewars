@@ -27,3 +27,4 @@ function bingo($arr, $cap)
 	return ($win>=$cap?"Winner!":"Loser!");
 }
 ?>
+
